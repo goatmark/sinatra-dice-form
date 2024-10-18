@@ -1,0 +1,13 @@
+<% params%>
+
+<h1>
+<%=@number_of_die%>d<%=@number_of_sides%>
+</h1>
+
+<ol>
+  <% @rolls.each do |a_roll|%>
+  <li><%= a_roll %></li>
+  <% end%>
+</ol>
+
+<a href="/">Back home.</a>
